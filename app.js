@@ -13,10 +13,10 @@ Ext.application({
         'app.*'
     ],
     // The name of the initial view to create.
-    mainView: 'app.view.main.Main',
-    launch: function(){
-        var ventana = Ext.create('app.view.login.WindowLogin',{
-        })
-        ventana.show();
-    }
+    mainView: 'app.view.main.Main'
+    //,launch: function(){
+    //     var ventana = Ext.create('app.view.login.WindowLogin',{
+    //     })
+    //     ventana.show();
+    // }
 });

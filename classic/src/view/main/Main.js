@@ -15,7 +15,8 @@ Ext.define('app.view.main.Main', {
 
         'app.view.main.MainController',
         'app.view.main.MainModel',
-        'app.view.main.List'
+        'app.view.main.List',
+        'app.view.clientes.PanelClientes'
     ],
 
     controller: 'main',
@@ -58,7 +59,6 @@ Ext.define('app.view.main.Main', {
     },
 
     defaults: {
-        bodyPadding: 20,
         tabConfig: {
             responsiveConfig: {
                 wide: {
@@ -74,19 +74,21 @@ Ext.define('app.view.main.Main', {
         }
     },
 
-    items: [{
+    items: [
+    {
+        title: 'Clientes',
+        iconCls: 'fa-user',
+        xtype: 'panelClientes',
+        bind: {
+            html: '{loremIpsum}'
+        }
+    },{
         title: 'Home',
         iconCls: 'fa-home',
         // The following grid shares a store with the classic version's grid as well!
         items: [{
             xtype: 'mainlist'
         }]
-    }, {
-        title: 'Users',
-        iconCls: 'fa-user',
-        bind: {
-            html: '{loremIpsum}'
-        }
     }, {
         title: 'Groups',
         iconCls: 'fa-users',

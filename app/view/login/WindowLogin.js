@@ -22,7 +22,7 @@ Ext.define('app.view.login.WindowLogin',{
                 fieldLabel: 'Usuario',
                 name: 'usuario',
                 vtype: 'email'        
-            },
+            }, 
             {
                 inputType: 'password',
                 fieldLabel: 'Password',
@@ -35,5 +35,6 @@ Ext.define('app.view.login.WindowLogin',{
             iconCls: 'x-fa fa-user',
             text: 'ingresar',
             handler: 'hacerLogin'
-        }]
+        }
+    ]
 });
