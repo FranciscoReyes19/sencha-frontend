@@ -1,0 +1,12 @@
+{
+    "success": true,
+    "data":{
+        "txt_nombre": "Francisco",
+        "txt_correo": "aresfrt@live.com",
+        "home_score": "frantwo",
+        "txt_edad": 28,
+        "txt_fnacimiento": "08-05-1985",
+        "txt_genero": 1,
+        "txt_idioma": ["1","3"]
+    }
+}

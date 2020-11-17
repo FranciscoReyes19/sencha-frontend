@@ -1,5 +1,7 @@
 Ext.define( 'app.view.clientes.PanelClientes',{
     extend: 'Ext.Panel',
+    requires:['app.view.clientes.form.FormCliente',
+              'app.view.clientes.Form.ComboClientes'],
     xtype: 'panelClientes',
 
     layout: 'border',
@@ -13,10 +15,31 @@ Ext.define( 'app.view.clientes.PanelClientes',{
                 var window = Ext.create('Ext.Window',{
                     modal: true,
                     title: 'Agregar un nuevo cliente',
-                    height: 300,
+                    height: 500,
                     width: 400,
-                    html: 'Este debe ser el cuerpo de un formulario',
+                    layout: {
+                        type: 'hbox',
+                        align: 'center',
+                        pack: 'center'
+                    },
+                    items: [{xtype: 'formcliente'}],
                     buttons: [{
+                        text: 'Submit',
+                        handler: function(){
+                            var form = this.up('window').down('formcliente');
+                            if(form.isValid()){
+                                form.doSubmit();
+                            }
+                        }
+                    },
+                    {
+                        text: 'Load',
+                        handler: function(){
+                            var form = this.up('window').down('formcliente');
+                            form.doLoad();
+                        }
+                    },
+                    {
                         text: 'Cerrar',
                         handler: function(){
                             window.close();
@@ -27,7 +50,7 @@ Ext.define( 'app.view.clientes.PanelClientes',{
             }
         },'->',
         {
-            xtype: 'textfield',
+            xtype: 'comboclientes',
             emptyText: 'Buscar cliente',
             width: 300
         }
@@ -74,6 +97,22 @@ Ext.define( 'app.view.clientes.PanelClientes',{
                                 {
                                     bodyStyle: 'background-color: #ABC; font-size: 30px; color: #345',
                                     html: 'detalle 2'
+                                }
+                            ],
+                            buttons:[
+                                {
+                                    text: 'Panel 1',
+                                    scale: 'large',
+                                    handler: function(){
+                                        this.up('panel').layout.setActiveItem(0);
+                                    }
+                                },
+                                {
+                                    text: 'Panel 2',
+                                    scale: 'large',
+                                    handler: function(){
+                                        this.up('panel').layout.setActiveItem(1);
+                                    }
                                 }
                             ]
                         },{

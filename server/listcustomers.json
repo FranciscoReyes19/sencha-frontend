@@ -1,0 +1,65 @@
+{
+    "numFilas": 9,
+    "success": true,
+    "data":[{
+        "client_k":6,
+        "nombre": "Francisco",
+        "apellido_paterno":"Reyes",
+        "apellido_materno":"Tlaxcala",
+        "fecha_nacimiento":"2001-01-03",
+        "email":"arefrt@live.com",
+        "genero":"2",
+        "limite_credito":"50000",
+        "rolnombre":"Desarrollador",
+        "colorfavorito":"naranja",
+        "estatus":"1"
+    },{
+        "client_k":7,
+        "nombre": "Antonio",
+        "apellido_paterno":"Hernandez",
+        "apellido_materno":"Galvez",
+        "fecha_nacimiento":"2001-01-03",
+        "email":"antonio@live.com",
+        "genero":"2",
+        "limite_credito":"5000554540",
+        "rolnombre":"Desarrollador",
+        "colorfavorito":"amarillo",
+        "estatus":"1"
+    },{
+        "client_k":8,
+        "nombre": "Pedro",
+        "apellido_paterno":"Reyes",
+        "apellido_materno":"Perez",
+        "fecha_nacimiento":"2001-01-03",
+        "email":"pedro@live.com",
+        "genero":"2",
+        "limite_credito":"55435",
+        "rolnombre":"Desarrollador jr",
+        "colorfavorito":"verde",
+        "estatus":"1"
+    },{
+        "client_k":9,
+        "nombre": "Sofia",
+        "apellido_paterno":"Guzman",
+        "apellido_materno":"Wilton",
+        "fecha_nacimiento":"2001-01-03",
+        "email":"sofia@live.com",
+        "genero":"2",
+        "limite_credito":"5454",
+        "rolnombre":"Desarrollador senior",
+        "colorfavorito":"azul",
+        "estatus":"1"
+    },{
+        "client_k":10,
+        "nombre": "Joaquin",
+        "apellido_paterno":"Walter",
+        "apellido_materno":"Delgado",
+        "fecha_nacimiento":"2001-01-03",
+        "email":"joaquin@live.com",
+        "genero":"2",
+        "limite_credito":"50000",
+        "rolnombre":"Marketing",
+        "colorfavorito":"gris",
+        "estatus":"1"
+    }]
+}
